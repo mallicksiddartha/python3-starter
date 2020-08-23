@@ -10,13 +10,14 @@ style.use('ggplot')
 #plt.plot(x, y)
 #plt.plot(x2, y2)
 
-x,y = np.loadtxt('F:\Siddartha\python\matplotlib stuff\exampleFile.csv',
+x,y = np.loadtxt('exampleFile.csv',
                  unpack=True,
                  delimiter=',')
 print(x,'\n',y)
-plt.plot(x,y)
+plt.plot(x,y, label='Oh look! A label')
 
 plt.title("Good plot, just look at it!!")
 plt.xlabel("X Label")
 plt.ylabel("Y Label")
+plt.legend()
 plt.show()
