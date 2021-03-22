@@ -5,7 +5,10 @@ import numpy as np
 import urllib.request
 import matplotlib.dates as mdates
 import matplotlib.ticker as mticker
+from matplotlib import style
+style.use("ludduman")
 
+print(plt.style.available)
 ##Candlestick charts need to be made with different module now, skip for this tutorial (2 Mar 2021)
 x = []
 y = []
